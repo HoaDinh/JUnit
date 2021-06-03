@@ -4,6 +4,7 @@ import org.junit.jupiter.api.*;
 import org.assertj.core.api.Assertions.*;
 import static org.assertj.core.api.Java6Assertions.*;
 
+
 class CheckBMITest {
     @Test
     void weightString()
