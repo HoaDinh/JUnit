@@ -12,7 +12,7 @@ class CheckemailTest {
     {
         //assertThat().isTrue();
         assertThat(ck.checkEmail(email)).isTrue();
-        //assertTrue(ck.checkEmail(email));
+
     }
 
 }
