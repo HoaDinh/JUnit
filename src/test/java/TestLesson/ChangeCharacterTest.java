@@ -15,11 +15,10 @@ class ChangeCharacterTest {
     @Test
     void checkSequence2()
     {
-        String str="you only live once. but if you do it right. once is enough";
+        String str="   you only live once.     but if you    do it right. once is enough";
         String abc = change.uppercase(str);
        assertThat(abc).isNotNull()
        .isEqualTo("You only live once. But if you do it right. Once is enough");
-
 
     }
 

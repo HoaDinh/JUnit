@@ -29,10 +29,12 @@ public class CheckMonths {
             }
             if (thang >= 13||thang <=0) throw new InputMismatchException("Đây không phải tháng trong năm, tháng không được lớn hơn 12 và nhỏ hơn 0");
 
+
         } catch (NumberFormatException e) {
             System.out.println("Đây không phải là tháng trong năm");
 
         }
+        System.out.println("aaaaaaa");
 
     }
 }
