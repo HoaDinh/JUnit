@@ -4,8 +4,10 @@ import Day16.Products;
 import jakarta.validation.constraints.Null;
 import org.springframework.util.LinkedMultiValueMap;
 
+import java.io.PrintStream;
 import java.lang.invoke.SwitchPoint;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class People {
     public People() {
@@ -127,7 +129,19 @@ public class People {
             }
 
         }
-        for (Map.Entry<String, List<People>> entry : maps.entrySet()) {
+        Iterator map2 = maps.entrySet().iterator();
+        while (map2.hasNext()) {
+            Map.Entry<String,  List<People>> entry = (Map.Entry) map2.next();
+            PrintStream systemout = System.out;
+            Double averageAge =  entry.getValue()
+                    .stream()
+                    .collect(Collectors.averagingInt(p -> p.age));
+            double roundOff = (double) Math.round(averageAge * 100) / 100;
+            systemout.println(entry.getKey() + " : " + roundOff );
+        }
+
+
+       /* for (Map.Entry<String, List<People>> entry : maps.entrySet()) {
             Float avg = 0f;
             Integer sum=0;
             for (People people1 : entry.getValue() ){
@@ -135,7 +149,7 @@ public class People {
             }
             avg=Float.valueOf(sum/entry.getValue().size());
             System.out.println(entry.getValue() + " : " + avg);
-        }
+        }*/
 
     }
 

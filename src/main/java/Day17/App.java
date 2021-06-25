@@ -19,8 +19,8 @@ public class App {
        People peo = new People();
         ArrayList<People> people = peo.addPeople();
       //peo.countPeople(people);
-       peo.Sort(people);
-        //peo.average(people);
+       //peo.Sort(people);
+        peo.average(people);
         //peo.evaluation(people);
 
     }
