@@ -1,6 +1,6 @@
 package Day17.BTVN.Bai1;
 
-public class CarHydro extends Cars implements AutoCar{
+public class CarHydroI extends Cars implements IAutoCar {
     @Override
     public String toString() {
         return "Car{" +
@@ -11,8 +11,8 @@ public class CarHydro extends Cars implements AutoCar{
                 '}';
     }
 
-    public CarHydro() { }
-    public CarHydro(String name, String color, String branch, String seats) {
+    public CarHydroI() { }
+    public CarHydroI(String name, String color, String branch, String seats) {
         super(name, color, branch, seats);
 
     }

@@ -1,6 +1,6 @@
 package Day17.BTVN.Bai1;
 
-public class CarDiesel extends Cars implements ManualCar{
+public class CarDieselI extends Cars implements IManualCar {
     private long diesel;
 
     public long getTypeGas() {
@@ -11,8 +11,8 @@ public class CarDiesel extends Cars implements ManualCar{
         this.diesel = diesel;
     }
 
-    public CarDiesel() { }
-    public CarDiesel(String name, String color, String branch, String seats, long typeGas) {
+    public CarDieselI() { }
+    public CarDieselI(String name, String color, String branch, String seats, long typeGas) {
         super(name, color, branch, seats);
         this.diesel = diesel;
     }

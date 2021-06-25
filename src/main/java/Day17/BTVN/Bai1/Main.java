@@ -3,7 +3,7 @@ package Day17.BTVN.Bai1;
 public class Main {
     public static void main(String[] args) {
         //Car chạy bằng gas và manual car
-        CarGas gas = new CarGas();
+        CarGasI gas = new CarGasI();
         gas.setName("VF");
         gas.setColor("Red");
         gas.setBranch("110i");
@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Thông tin xe chạy bằng gas: "+gas);
         gas.run(100);
         //Car chạy bằng Hydro và tự động
-        CarHydro hydro = new CarHydro();
+        CarHydroI hydro = new CarHydroI();
         hydro.setName("VF145");
         hydro.setColor("Black");
         hydro.setBranch("110i");

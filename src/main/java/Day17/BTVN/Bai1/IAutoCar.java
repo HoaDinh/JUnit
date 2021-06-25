@@ -1,6 +1,6 @@
 package Day17.BTVN.Bai1;
 
-public interface AutoCar {
+public interface IAutoCar {
     void autoTrip();
     void autostop();
     void checklight();

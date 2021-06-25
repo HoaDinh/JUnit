@@ -1,5 +1,5 @@
 package Day17.BTVN.Bai1;
 
-public interface ManualCar {
+public interface IManualCar {
     void run(int speed);
 }
