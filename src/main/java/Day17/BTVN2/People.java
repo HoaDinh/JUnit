@@ -99,6 +99,7 @@ public class People {
     }
 
     public void Sort(@org.jetbrains.annotations.NotNull ArrayList<People> people) {
+        Collections.sort(people,Comparator.comparing(People::getName));
         for (People p : people) {
             if (p.age > 25) {
                 /*if (!maps.containsKey(p.name + p.nationality + p.age)) {
