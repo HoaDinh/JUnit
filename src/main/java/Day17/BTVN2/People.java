@@ -135,12 +135,10 @@ public class People {
             PrintStream systemout = System.out;
             Double averageAge =  entry.getValue()
                     .stream()
-                    .collect(Collectors.averagingInt(p -> p.age));
-            double roundOff = (double) Math.round(averageAge * 100) / 100;
-            systemout.println(entry.getKey() + " : " + roundOff );
+                    .collect(Collectors.averagingInt(p-> p.age));
+            double rounddown = (double) Math.round(averageAge * 100) / 100;
+            systemout.println(entry.getKey() + " : " + rounddown );
         }
-
-
        /* for (Map.Entry<String, List<People>> entry : maps.entrySet()) {
             Float avg = 0f;
             Integer sum=0;
@@ -152,7 +150,6 @@ public class People {
         }*/
 
     }
-
     public void evaluation(@org.jetbrains.annotations.NotNull ArrayList<People> people) {
         String str ="";
 

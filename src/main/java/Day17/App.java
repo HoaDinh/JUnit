@@ -20,8 +20,8 @@ public class App {
         ArrayList<People> people = peo.addPeople();
       //peo.countPeople(people);
        //peo.Sort(people);
-        peo.average(people);
-        //peo.evaluation(people);
+        //peo.average(people);
+        peo.evaluation(people);
 
     }
   /*  public  static void demoPerson()
